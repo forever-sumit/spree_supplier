@@ -6,10 +6,10 @@ require 'spree_supplier/version'
 Gem::Specification.new do |spec|
   spec.name          = "spree_supplier"
   spec.version       = SpreeSupplier::VERSION
-  spec.authors       = ["Bharat"]
-  spec.email         = ["dilip.ror@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.authors       = ["Sumit"]
+  spec.email         = ["forever.sumitsharma@gmail.com"]
+  spec.summary       = "Spree extenstion for Supplier"
+  spec.description   = "This gem provide ability to add suppliers and associate them to products."
   spec.homepage      = ""
   spec.license       = "MIT"
 

@@ -1,3 +1,5 @@
+Don't use this gem. Currently this is in under construction.
+ 
 # SpreeSupplier
 
 TODO: Write a gem description
