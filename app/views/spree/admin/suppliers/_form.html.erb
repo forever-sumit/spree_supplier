@@ -1,0 +1,63 @@
+<div data-hook="admin_supplier_form_fields">
+  <div data-hook="admin_supplier_left_right" class="left eight columns columns">
+    <%= f.field_container :legal_name do %>
+      <%= f.label :legal_name, raw(Spree.t(:legal_name) + content_tag(:span, ' *', :class => 'required')) %>
+      <%= f.text_field :legal_name, :class => 'fullwidth title' %>
+      <%= f.error_message_on :legal_name %>
+    <% end %>
+  </div>
+
+  <div class="right four columns omega" data-hook="admin_supplier_form_right">
+    <%= f.field_container :name do %>
+      <%= f.label :name, raw(Spree.t(:name) + content_tag(:span, ' *', :class => 'required')) %>
+      <%= f.text_field :name, :class => 'fullwidth title' %>
+      <%= f.error_message_on :name %>
+  </div>
+
+  <div class="clear"></div>
+
+  <div class="left eight columns alpha">
+    <%= f.field_container :description do %>
+      <%= f.label :description, Spree.t(:description) %>
+      <%= f.text_area :description, {:rows => 5, :class => 'fullwidth'} %>
+      <div class="hint">
+        <%= Spree.t(:'hints.description') %>
+        <span class=".text-length-counter" data-target="#spree_supplier_description" data-max-length="350"></span>
+      </div>
+      <%= f.error_message_on :description %>
+    <% end %>
+  </div>
+    
+  <div class="right four columns omega">
+    <%= f.field_container :address do %>
+      <%= f.label :address, raw(Spree.t(:address) + content_tag(:span, ' *', :class => 'required')) %>
+      <%= f.text_area :address, {:rows => 5, :class => 'fullwidth'} %>
+      <div class="hint">
+        <%= Spree.t(:'hints.address') %>
+        <span class=".text-length-counter" data-target="#spree_supplier_address" data-max-length="150"></span>
+      </div>
+      <%= f.error_message_on :address %>
+    <% end %>
+  </div>
+
+  <div class="clear"></div>
+
+  <div class="left six columns alpha">
+    <%= f.field_container :phone do %>
+      <%= f.label :phone, raw(Spree.t(:phone) + content_tag(:span, ' *', :class => 'required')) %>
+      <%= f.text_field :phone, :class => 'fullwidth title' %>
+      <%= f.error_message_on :phone %>
+    <% end %>
+  </div>
+
+  <div class="right six columns alpha">
+    <%= f.field_container :email do %>
+      <%= f.label :email, raw(Spree.t(:email) + content_tag(:span, ' *', :class => 'required')) %>
+      <%= f.text_field :email, :class => 'fullwidth title' %>
+      <%= f.error_message_on :email %>
+    <% end %>
+  </div>
+
+  <div class="clear"></div>
+
+</div>
